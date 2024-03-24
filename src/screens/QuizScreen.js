@@ -70,170 +70,161 @@ const questionsData = [
     options: ["برازيليا", "ريو دي جانيرو", "ساو باولو", "بوينس آيرس"],
     correctAnswer: "برازيليا",
   },
-  {
-    question: "ما هي عاصمة فرنسا؟",
-    options: ["لندن", "برلين", "باريس", "مدريد"],
-    correctAnswer: "باريس",
-  },
-  {
-    question: "ما هي عاصمة ألمانيا؟",
-    options: ["لندن", "برلين", "باريس", "مدريد"],
-    correctAnswer: "برلين",
-  },
-  {
-    question: "ما هي عاصمة إيطاليا؟",
-    options: ["روما", "ميلان", "فلورنسا", "نابولي"],
-    correctAnswer: "روما",
-  },
-  {
-    question: "من هو أول إنسان وقع على سطح القمر؟",
-    options: ["نيل أرمسترونغ", "باز ألدرين", "جون جلين", "يوري غاجارين"],
-    correctAnswer: "نيل أرمسترونغ",
-  },
-  {
-    question: "من هو مؤلف كتاب 'حكاية الحضارة'؟",
-    options: ["ويل ديورانت", "دان براون", "جورج أورويل", "آرثر كلارك"],
-    correctAnswer: "ويل ديورانت",
-  },
-  {
-    question: "ما هي اللغة الرسمية في البرازيل؟",
-    options: ["البرتغالية", "الإسبانية", "الإنجليزية", "الفرنسية"],
-    correctAnswer: "البرتغالية",
-  },
-  {
-    question: "ما هو اسم أعلى قمة جبلية في العالم؟",
-    options: ["إفرست", "كيليمنجارو", "ماكينلي", "أكونكاجوا"],
-    correctAnswer: "إفرست",
-  },
-  {
-    question: "من هو مؤلف رواية 'مائة عام من العزلة'؟",
-    options: [
-      "غابرييل غارسيا ماركيز",
-      "ألبرت كاموس",
-      "فرانتس كافكا",
-      "إرنست همنغواي",
-    ],
-    correctAnswer: "غابرييل غارسيا ماركيز",
-  },
-  {
-    question: "من هو أول رئيس لروسيا بعد تفكك الاتحاد السوفييتي؟",
-    options: [
-      "بوريس يلتسين",
-      "فلاديمير بوتين",
-      "ميخائيل غورباتشوف",
-      "دميتري ميدفيديف",
-    ],
-    correctAnswer: "بوريس يلتسين",
-  },
-  {
-    question: "ما هي الدولة التي يسميها سكانها 'البلد الأم الأصلي'؟",
-    options: ["أستراليا", "نيوزيلندا", "كندا", "الولايات المتحدة الأمريكية"],
-    correctAnswer: "نيوزيلندا",
-  },
-  {
-    question: "من هو مؤلف كتاب 'حرب وسلام'؟",
-    options: [
-      "ليو تولستوي",
-      "فيودور دوستويفسكي",
-      "ألكسندر بوشكين",
-      "أنطون تشيخوف",
-    ],
-    correctAnswer: "ليو تولستوي",
-  },
+  // {
+  //   question: "ما هي عاصمة فرنسا؟",
+  //   options: ["لندن", "برلين", "باريس", "مدريد"],
+  //   correctAnswer: "باريس",
+  // },
+  // {
+  //   question: "ما هي عاصمة ألمانيا؟",
+  //   options: ["لندن", "برلين", "باريس", "مدريد"],
+  //   correctAnswer: "برلين",
+  // },
+  // {
+  //   question: "ما هي عاصمة إيطاليا؟",
+  //   options: ["روما", "ميلان", "فلورنسا", "نابولي"],
+  //   correctAnswer: "روما",
+  // },
+  // {
+  //   question: "من هو أول إنسان وقع على سطح القمر؟",
+  //   options: ["نيل أرمسترونغ", "باز ألدرين", "جون جلين", "يوري غاجارين"],
+  //   correctAnswer: "نيل أرمسترونغ",
+  // },
+  // {
+  //   question: "من هو مؤلف كتاب 'حكاية الحضارة'؟",
+  //   options: ["ويل ديورانت", "دان براون", "جورج أورويل", "آرثر كلارك"],
+  //   correctAnswer: "ويل ديورانت",
+  // },
+  // {
+  //   question: "ما هي اللغة الرسمية في البرازيل؟",
+  //   options: ["البرتغالية", "الإسبانية", "الإنجليزية", "الفرنسية"],
+  //   correctAnswer: "البرتغالية",
+  // },
+  // {
+  //   question: "ما هو اسم أعلى قمة جبلية في العالم؟",
+  //   options: ["إفرست", "كيليمنجارو", "ماكينلي", "أكونكاجوا"],
+  //   correctAnswer: "إفرست",
+  // },
+  // {
+  //   question: "من هو مؤلف رواية 'مائة عام من العزلة'؟",
+  //   options: [
+  //     "غابرييل غارسيا ماركيز",
+  //     "ألبرت كاموس",
+  //     "فرانتس كافكا",
+  //     "إرنست همنغواي",
+  //   ],
+  //   correctAnswer: "غابرييل غارسيا ماركيز",
+  // },
+  // {
+  //   question: "من هو أول رئيس لروسيا بعد تفكك الاتحاد السوفييتي؟",
+  //   options: [
+  //     "بوريس يلتسين",
+  //     "فلاديمير بوتين",
+  //     "ميخائيل غورباتشوف",
+  //     "دميتري ميدفيديف",
+  //   ],
+  //   correctAnswer: "بوريس يلتسين",
+  // },
+  // {
+  //   question: "ما هي الدولة التي يسميها سكانها 'البلد الأم الأصلي'؟",
+  //   options: ["أستراليا", "نيوزيلندا", "كندا", "الولايات المتحدة الأمريكية"],
+  //   correctAnswer: "نيوزيلندا",
+  // },
+  // {
+  //   question: "من هو مؤلف كتاب 'حرب وسلام'؟",
+  //   options: [
+  //     "ليو تولستوي",
+  //     "فيودور دوستويفسكي",
+  //     "ألكسندر بوشكين",
+  //     "أنطون تشيخوف",
+  //   ],
+  //   correctAnswer: "ليو تولستوي",
+  // },
 
-  {
-    question: "ما هي عاصمة الهند؟",
-    options: ["نيودلهي", "مومباي", "كولكاتا", "بنغالور"],
-    correctAnswer: "نيودلهي",
-  },
-  {
-    question: "ما هي عاصمة الولايات المتحدة الأمريكية؟",
-    options: ["نيويورك", "واشنطن العاصمة", "لوس أنجلوس", "شيكاغو"],
-    correctAnswer: "واشنطن العاصمة",
-  },
-  {
-    question: "ما هو اسم أكبر نهر في العالم؟",
-    options: ["النيل", "الأمازون", "المسيسيبي", "اليانغتسي"],
-    correctAnswer: "الأمازون",
-  },
-  {
-    question: "من هو مؤسس شركة مايكروسوفت؟",
-    options: ["بيل غيتس", "ستيف جوبز", "مارك زوكربيرج", "لاري بيج"],
-    correctAnswer: "بيل غيتس",
-  },
-  {
-    question: "من هو أول رئيس لجنوب أفريقيا بعد نهاية نظام الفصل العنصري؟",
-    options: [
-      "نيلسون مانديلا",
-      "ثابو مبيكي",
-      "فريديك دي كليرك",
-      "كريستيان دي كليرك",
-    ],
-    correctAnswer: "نيلسون مانديلا",
-  },
-  {
-    question: "ما هو عدد كواكب المجموعة الشمسية؟",
-    options: ["8", "9", "7", "10"],
-    correctAnswer: "8",
-  },
-  {
-    question: "ما هو العنصر الكيميائي الذي يرمز له بالرمز Fe؟",
-    options: ["الحديد", "الزئبق", "الذهب", "الفضة"],
-    correctAnswer: "الحديد",
-  },
-  {
-    question: "ما هي عاصمة إسبانيا؟",
-    options: ["مدريد", "برشلونة", "فالنسيا", "سيفيا"],
-    correctAnswer: "مدريد",
-  },
-  {
-    question: "ما هو القارة التي تحتوي على أكبر عدد من الدول؟",
-    options: ["آسيا", "أفريقيا", "أوروبا", "أمريكا الشمالية"],
-    correctAnswer: "آسيا",
-  },
-  {
-    question: "من هو مؤلف كتاب 'العالم الجديد'؟",
-    options: ["آلدوس هكسلي", "جورج أورويل", "ألبرت كاموس", "هربرت ويلز"],
-    correctAnswer: "آلدوس هكسلي",
-  },
-  {
-    question: "من هي أول امرأة فازت بجائزة نوبل للسلام؟",
-    options: ["ماري كوري", "مادلين أولبرايت", "جيني أوشفيتز", "ميريل ستريب"],
-    correctAnswer: "مادلين أولبرايت",
-  },
+  // {
+  //   question: "ما هي عاصمة الهند؟",
+  //   options: ["نيودلهي", "مومباي", "كولكاتا", "بنغالور"],
+  //   correctAnswer: "نيودلهي",
+  // },
+  // {
+  //   question: "ما هي عاصمة الولايات المتحدة الأمريكية؟",
+  //   options: ["نيويورك", "واشنطن العاصمة", "لوس أنجلوس", "شيكاغو"],
+  //   correctAnswer: "واشنطن العاصمة",
+  // },
+  // {
+  //   question: "ما هو اسم أكبر نهر في العالم؟",
+  //   options: ["النيل", "الأمازون", "المسيسيبي", "اليانغتسي"],
+  //   correctAnswer: "الأمازون",
+  // },
+  // {
+  //   question: "من هو مؤسس شركة مايكروسوفت؟",
+  //   options: ["بيل غيتس", "ستيف جوبز", "مارك زوكربيرج", "لاري بيج"],
+  //   correctAnswer: "بيل غيتس",
+  // },
+  // {
+  //   question: "من هو أول رئيس لجنوب أفريقيا بعد نهاية نظام الفصل العنصري؟",
+  //   options: [
+  //     "نيلسون مانديلا",
+  //     "ثابو مبيكي",
+  //     "فريديك دي كليرك",
+  //     "كريستيان دي كليرك",
+  //   ],
+  //   correctAnswer: "نيلسون مانديلا",
+  // },
+  // {
+  //   question: "ما هو عدد كواكب المجموعة الشمسية؟",
+  //   options: ["8", "9", "7", "10"],
+  //   correctAnswer: "8",
+  // },
+  // {
+  //   question: "ما هو العنصر الكيميائي الذي يرمز له بالرمز Fe؟",
+  //   options: ["الحديد", "الزئبق", "الذهب", "الفضة"],
+  //   correctAnswer: "الحديد",
+  // },
+  // {
+  //   question: "ما هي عاصمة إسبانيا؟",
+  //   options: ["مدريد", "برشلونة", "فالنسيا", "سيفيا"],
+  //   correctAnswer: "مدريد",
+  // },
+  // {
+  //   question: "ما هو القارة التي تحتوي على أكبر عدد من الدول؟",
+  //   options: ["آسيا", "أفريقيا", "أوروبا", "أمريكا الشمالية"],
+  //   correctAnswer: "آسيا",
+  // },
+  // {
+  //   question: "من هو مؤلف كتاب 'العالم الجديد'؟",
+  //   options: ["آلدوس هكسلي", "جورج أورويل", "ألبرت كاموس", "هربرت ويلز"],
+  //   correctAnswer: "آلدوس هكسلي",
+  // },
+  // {
+  //   question: "من هي أول امرأة فازت بجائزة نوبل للسلام؟",
+  //   options: ["ماري كوري", "مادلين أولبرايت", "جيني أوشفيتز", "ميريل ستريب"],
+  //   correctAnswer: "مادلين أولبرايت",
+  // },
 
-  {
-    question: "ما هي عاصمة اليابان؟",
-    options: ["طوكيو", "أوساكا", "كيوتو", "ناغويا"],
-    correctAnswer: "طوكيو",
-  },
+  // {
+  //   question: "ما هي عاصمة اليابان؟",
+  //   options: ["طوكيو", "أوساكا", "كيوتو", "ناغويا"],
+  //   correctAnswer: "طوكيو",
+  // },
 ];
 
 const QuizScreen = ({ navigation }) => {
+  const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
-  const [uncorrect, setUncorrect] = useState(0);
+  const [uncurrect, setuncurrect] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [timer, setTimer] = useState(60);
   const [timerAnimation] = useState(new Animated.Value(0));
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
   const [showWrongAnswer, setShowWrongAnswer] = useState(false);
-  
-  // Shuffle questionsData and select first 10 questions
-  useEffect(() => {
-    const shuffledQuestions = shuffleArray(questionsData);
-    const selectedQuestions = shuffledQuestions.slice(0, 10);
-    questionsData = selectedQuestions;
-  }, []);
 
-  // Function to shuffle an array
-  const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  };
+  useEffect(() => {
+    // Shuffle the questionsData array and select the first 10 elements
+    const shuffledQuestions = shuffleArray(questionsData).slice(0, 10);
+    setQuestions(shuffledQuestions);
+  }, []);
 
   useEffect(() => {
     let interval;
@@ -250,6 +241,24 @@ const QuizScreen = ({ navigation }) => {
     }
     return () => clearInterval(interval);
   }, [currentQuestionIndex, showScore]);
+
+  // Function to shuffle an array
+  const shuffleArray = (array) => {
+    let currentIndex = array.length,
+      randomIndex;
+
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ];
+    }
+
+    return array;
+  };
 
   const handleAnswer = (selectedAnswer) => {
     clearInterval(timer);
